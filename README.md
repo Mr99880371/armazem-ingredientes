@@ -191,6 +191,9 @@ Isso eleva o projeto a um nível profissional de concorrência.
 
 Os testes garantem a integridade das regras de negócio.
 
+#### Rodar:  
+```mvn test```
+
 #### ✔ CompartmentServiceTest
 
 - Mudança de tipo válida/inválida
