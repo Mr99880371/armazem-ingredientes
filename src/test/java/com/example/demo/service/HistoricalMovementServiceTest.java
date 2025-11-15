@@ -53,8 +53,8 @@ public class HistoricalMovementServiceTest {
         List<HistoricalMovement> lista = movementService.listarTodos();
 
         assertEquals(2, lista.size());
-        assertEquals(MovementType.ENTRADA, lista.get(0).getTipoMovimento());
-        assertEquals(MovementType.SAIDA, lista.get(1).getTipoMovimento());
+        assertEquals(MovementType.ENTRADA, lista.get(0).getOperacao());
+        assertEquals(MovementType.SAIDA, lista.get(1).getOperacao());
     }
 
     // Ordenar por quantidade
