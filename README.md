@@ -290,7 +290,7 @@ E cada endpoint possui:
 
 #### Remover ingrediente
 
-```DELETE /api/ingredientes/{id}?responsavel=Mariane```
+```DELETE /api/ingredientes/{id}?responsavel={nomeResponsavel}```
 
 ### 📜 Histórico
 
