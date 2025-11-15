@@ -272,11 +272,11 @@ E cada endpoint possui:
 
 #### Compartimentos disponíveis para armazenar
 
-```GET /api/compartimentos/disponiveis?quantidade=50&tipo=SECOS```
+```GET /api/compartimentos/disponiveis?quantidade=50&tipo={tipoIngrediente}```
 
 #### Compartimentos disponíveis para venda
 
-```GET /api/compartimentos/disponiveis-para-venda?tipo=LIQUIDOS```
+```GET /api/compartimentos/disponiveis-para-venda?tipo={tipoIngrediente}```
 
 ### 🧂 Ingredientes
 
