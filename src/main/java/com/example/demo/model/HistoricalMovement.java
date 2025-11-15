@@ -19,7 +19,6 @@ public class HistoricalMovement {
     private Long id;
 
     @Enumerated(EnumType.STRING)
-    private MovementType tipoMovimento;
     private MovementType operacao;  // ENTRADA ou SAIDA
 
     private double quantidade;
@@ -41,18 +40,8 @@ public class HistoricalMovement {
     @JoinColumn(name = "compartimento_id")
     private Compartment compartimento;
 
-    // tipo de movimento (ENTRADA ou SAIDA)
-    public MovementType getTipoMovimento() {
-        return tipoMovimento;
-    }
-
-    public void setTipoMovimento(MovementType tipoMovimento) {
-        this.tipoMovimento = tipoMovimento;
-    }
-
     public HistoricalMovement(MovementType operacao, double quantidade, String tipoIngrediente,
                               String nomeIngrediente, String responsavel, Compartment compartimento) {
-        this.tipoMovimento = operacao;
         this.operacao = operacao;
         this.quantidade = quantidade;
         this.tipoIngrediente = tipoIngrediente;
